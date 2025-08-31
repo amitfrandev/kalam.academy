@@ -8,7 +8,7 @@ import Vision from "@/assets/3dIcons/vision.webp";
 import Mission from "@/assets/3dIcons/mission.webp";
 import Work from "@/assets/3dIcons/work.webp";
 import Image from "next/image";
-import catBg from "@/assets/gg-bg2.png";
+import catBg from "@/assets/gg-bg3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

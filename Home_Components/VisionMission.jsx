@@ -8,7 +8,7 @@ import Vision from "@/assets/3dIcons/vision.webp";
 import Mission from "@/assets/3dIcons/mission.webp";
 import Work from "@/assets/3dIcons/work.webp";
 import Image from "next/image";
-import catBg from "@/assets/bg2.jpg";
+import catBg from "@/assets/gg-bg2.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -96,13 +96,13 @@ export default function VisionMission() {
       {/* Background Image */}
       <div
         ref={bgRef}
-        className="absolute inset-0 z-0 opacity-10 will-change-transform"
+        className="absolute inset-0 z-0 will-change-transform"
       >
         <Image
           src={catBg}
           alt="background"
           objectFit="cover"
-          objectPosition="bottom"
+          objectPosition="bottom right"
           fill
           className="object-cover"
           priority
@@ -129,7 +129,7 @@ export default function VisionMission() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto perspective-1000">
           <div
             ref={addToCardRefs}
-            className="rounded-2xl p-4 bg-gradient-to-br from-white/50 to-orange-100/30 shadow-2xl backdrop-blur-sm border border-white/20 hover:shadow-orange-200/50 transition-transform"
+            className="rounded-2xl p-4 bg-gradient-to-br from-white/5 to-orange-100/20 shadow-2xl backdrop-blur-sm border border-white/20 hover:shadow-orange-300/10 transition-transform"
           >
             <div className="flex items-center gap-3 mb-6">
               <Image alt="logo-work" width={60} height={60} src={Work} objectFit="contain" />
@@ -143,7 +143,7 @@ export default function VisionMission() {
 
           <div
             ref={addToCardRefs}
-            className="z-20 rounded-2xl p-8 bg-gradient-to-br from-white/70 to-indigo-100/30 shadow-2xl backdrop-blur-xl border border-white/20 hover:shadow-indigo-200/50 transition-transform"
+            className="z-20 rounded-2xl p-8 bg-gradient-to-br from-white/5 to-indigo-100/20 shadow-2xl backdrop-blur-xl border border-white/20 hover:shadow-indigo-300/10 transition-transform"
           >
             <div className="flex items-center gap-3 mb-6">
               <Image alt="logo-vision" width={60} height={60} src={Vision} objectFit="contain" />
@@ -157,7 +157,7 @@ export default function VisionMission() {
 
           <div
             ref={addToCardRefs}
-            className="rounded-2xl p-8 bg-gradient-to-br from-white/70 to-green-100/30 shadow-2xl backdrop-blur-xl border border-white/20 hover:shadow-green-200/50 transition-transform"
+            className="rounded-2xl p-8 bg-gradient-to-br from-white/5 to-green-100/32 shadow-2xl backdrop-blur-xl border border-white/20 hover:shadow-green-300/10 transition-transform"
           >
             <div className="flex items-center gap-3 mb-6">
               <Image alt="logo-mission" width={60} height={60} src={Mission} objectFit="contain" />
